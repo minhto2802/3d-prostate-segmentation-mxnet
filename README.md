@@ -72,7 +72,7 @@ scikit-image==0.16.2
 simpleitk==1.2.4
 ```
 
-## Authour
+## Authours
 * [**Minh Nguyen Nhat To**](https://github.com/minhto2802)
 
 ## Citation
