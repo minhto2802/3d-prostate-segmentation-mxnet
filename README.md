@@ -9,7 +9,7 @@ This repository contains the code for prostate segmentation in MRI using deep de
 - [ ] Resample the test set predictions to their original spacing
 - [ ] Usage guideline
 
-## About
+## Method
 The Preprocessing and Augmentation pipeline are designed specifically for PROMISE12 dataset. However, they can be easily extended for using with other datasets.
 
 The CNN Architecture proposed in our paper:
