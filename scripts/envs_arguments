@@ -1,0 +1,1 @@
+PYTHONUNBUFFERED=1;PATH=/usr/local/cuda-10.0/bin;LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64;DISPLAY=localhost:10.0
