@@ -2,6 +2,7 @@
 This repository contains the code for prostate segmentation in MRI using deep dense multi-path neural network. 
 
 ## Task lists
+- [x] Preprocessing
 - [x] Training and validation
 - [ ] Cascade
 - [ ] Inference on the test set
@@ -23,12 +24,53 @@ The PROMISE12 dataset contains heterogenous data from 4 different hospitals and 
 The training set were split into the training* and validation sets based on the [patient meta-data](https://github.com/minhto2802/dense-multipath-nn-prostate-segmentation/blob/master/src/meta_data.xlsx) to ensure that both the training* and validation sets contain data from all 4 hospitals/institues. The model achieved an average ~89 DSC on the validation set without further post-processing.
 
 Below are a few examples of the model predictions on the validation set (yellow: groundtruth, red: prediction):
-- **Case00  
+- **Case00**  
 ![case00](https://github.com/minhto2802/dense-multipath-nn-prostate-segmentation/blob/master/src/Case00.png)
-- **Case15  
+- **Case15**  
 ![case15](https://github.com/minhto2802/dense-multipath-nn-prostate-segmentation/blob/master/src/Case15.png)
-- **Case25  
+- **Case25**  
 ![Case25](https://github.com/minhto2802/dense-multipath-nn-prostate-segmentation/blob/master/src/Case26.png)
+
+## Data Directory
+```
+.
+├── inputs
+│   ├── raw
+│   │   ├── test
+│   │   │   ├── Case00.mhd
+│   │   │   ├── Case00.raw
+│   │   │   ├── Case00_segmentation.mhd
+│   │   │   ├── Case00_segmentation.raw
+│   │   │   ├── ...
+│   │   │   ├── Case29.mhd
+│   │   │   ├── Case29.raw
+│   │   │   ├── Case29_segmentation.mhd
+│   │   │   ├── Case29_segmentation.raw
+│   │   └── training
+│   │   │   ├── Case00.mhd
+│   │   │   ├── Case00.raw
+│   │   │   ├── Case00_segmentation.mhd
+│   │   │   ├── Case00_segmentation.raw
+│   │   │   ├── ...
+│   │   │   ├── Case49.mhd
+│   │   │   ├── Case49.raw
+│   │   │   ├── Case49_segmentation.mhd
+│   │   │   ├── Case49_segmentation.raw
+```
+
+## Dependencies
+```
+gluoncv==0.4.0
+imageio==2.8.0
+imgaug==0.3.0
+matplotlib==3.2.0
+mxboard==0.1.0
+mxnet-cu102mkl==1.6.0
+numpy==1.17.4
+opencv-python==4.2.0.32
+scikit-image==0.16.2
+simpleitk==1.2.4
+```
 
 ## Authour
 * [**Minh Nguyen Nhat To**](https://github.com/minhto2802)
