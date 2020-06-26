@@ -21,7 +21,7 @@ Our model achieved **95.11 DSC** on our private dataset when training on both T2
 
 ## PROMISE12
 The PROMISE12 dataset contains heterogenous data from 4 different hospitals and institutes. All images were resampled to the spacing of (0.27, 0.27, 2.2) [x, y ,z].
-The training set were split into the training* and validation sets based on the [patient meta-data](https://github.com/minhto2802/dense-multipath-nn-prostate-segmentation/blob/master/src/meta_data.xlsx) to ensure that both the training* and validation sets contain data from all 4 hospitals/institues. The model achieved an average ~89 DSC on the validation set without further post-processing.
+The training set were split into the training* and validation sets based on the [patient meta-data](https://github.com/minhto2802/3d-prostate-segmentation-mxnet/tree/master/src) to ensure that both the training* and validation sets contain data from all 4 hospitals/institues. The model achieved an average ~89 DSC on the validation set without further post-processing.
 
 Below are a few examples of the model predictions on the validation set (yellow: groundtruth, red: prediction):
 - **Case00**  
